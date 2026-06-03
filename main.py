@@ -1,5 +1,16 @@
 # Don't Remove Credit Tg - @newstudent1885
 # Ask Doubt on telegram @newstudent1885
+import time
+from pyrogram.errors import FloodWait
+
+@app.on_message()
+def handler(client, message):
+    try:
+        client.send_message(message.chat.id, "Hello!")
+    except FloodWait as e:
+        print(f"FloodWait: waiting {e.value} seconds")
+        time.sleep(e.value)
+        client.send_message(message.chat.id, "Hello after wait!")
 
 import os
 import re
