@@ -1,7 +1,8 @@
 # Don't Remove Credit Tg - @newstudent1885
 # Ask Doubt on telegram @newstudent1885
 import time
-from pyrogram.errors import FloodWai
+from pyrogram.errors import FloodWait
+
 import os
 import re
 import sys
