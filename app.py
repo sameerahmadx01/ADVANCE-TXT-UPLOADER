@@ -1,10 +1,10 @@
 from flask import Flask
+
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():
-    return 'Tushar'
+def home():
+    return "Bot is running on Render Web Service!"
 
-
-if __name__ == "__main__":
-    app.run()
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=10000)
