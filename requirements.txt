@@ -41,6 +41,7 @@ bs4
 pytube
 pymongo 
 psutil
+telethon
 
 
 
